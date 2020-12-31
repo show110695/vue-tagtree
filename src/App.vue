@@ -1,16 +1,48 @@
 <template>
   <div id="app">
+    <!-- <tagtree
+        title="栏目选择"
+        width="300"
+        :dataList="columnList"
+        :props="defaultProps"
+        nodeKey="subjectUuid"
+        :oneChecked="true"
+      >
+      </tagtree> -->
   </div>
 </template>
 
 <script>
+// import tagtree from "./packages/tagtree";
 
 export default {
   name: "App",
   components: {
+    // tagtree
   },
   data() {
     return {
+      defaultProps: {
+        label: "name",
+        children: "subjectList",
+      },
+      columnList: [
+        {
+          name: "栏目1",
+          subjectUuid: "1",
+          subjectList: [
+            {
+              name: "栏目1-1",
+              subjectUuid: "1-1",
+            },
+          ],
+        },
+        {
+          name: "栏目2",
+          subjectUuid: "2",
+          subjectList: [],
+        },
+      ],
     };
   },
 };
