@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>
+    <!-- <div>
       <tagtree
         title="栏目选择"
         width="300"
@@ -9,17 +9,17 @@
         nodeKey="subjectUuid"
       >
       </tagtree>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import tagtree from "./components/tagtree.vue";
+// import tagtree from "./packages/tagtree";
 
 export default {
   name: "App",
   components: {
-    tagtree,
+    // tagtree,
   },
   data() {
     return {
