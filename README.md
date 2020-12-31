@@ -5,6 +5,10 @@
 npm install vue-tagtree
 ```
 
+***\*![image](https://github.com/LiFuHai1106/vue-tagtree/blob/master/src/assets/1.jpg)\****
+
+***\*![image](https://github.com/LiFuHai1106/vue-tagtree/blob/master/src/assets/2.jpg)\****
+
 #### 二、使用方法
 
 ##### 1、html
