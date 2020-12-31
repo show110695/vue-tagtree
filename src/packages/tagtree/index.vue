@@ -97,10 +97,6 @@ export default {
       type: Boolean,
       default: true
     },
-    // 默认展开节点
-    defaultExpandedKeys: {
-      type: Array
-    },
     // 标签是否可关闭
     tagClosable: {
       type: Boolean,
