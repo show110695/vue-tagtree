@@ -1,19 +1,20 @@
 ### vue-tagtree
 
-#### 一、安装
+#### 一、预览
+
+[https://lifuhai1106.github.io/vue-tagtree-site/tagtree/tagtree.html](https://lifuhai1106.github.io/vue-tagtree-site/tagtree/tagtree.html)
+
+#### 二、文档
+
+[https://lifuhai1106.github.io/vue-tagtree-site/](https://lifuhai1106.github.io/vue-tagtree-site/)
+
+#### 三、安装和使用
+
+##### 1、npm
+
 ```
 npm install vue-tagtree
-```
 
-***\*![image](https://github.com/LiFuHai1106/vue-tagtree/blob/master/src/assets/1.jpg)\****
-
-***\*![image](https://github.com/LiFuHai1106/vue-tagtree/blob/master/src/assets/2.jpg)\****
-
-#### 二、使用方法
-
-##### 1、html
-
-```
 <tagtree 
         title="栏目选择"
         width="300"
@@ -21,10 +22,7 @@ npm install vue-tagtree
         :props="defaultProps"
         nodeKey="subjectUuid"
 ></tagtree>
-```
 
-##### 2、js
-```
 import tagtree from 'vue-tagtree'
 import 'vue-tagtree/dist/tagtree.css'
 export default {
@@ -59,7 +57,62 @@ export default {
 };
 ```
 
-#### 三、API
+##### 2、html
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="tagtree.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="tagtree.umd.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <tagtree title="栏目选择" width="300" :data-list="columnList" :props="defaultProps" node-key="subjectUuid"></tagtree>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            components: {
+                tagtree
+            },
+            data: function() {
+                return {
+                    defaultProps: {
+                        label: "name",
+                        children: "subjectList",
+                    },
+                    columnList: [{
+                        name: "栏目1",
+                        subjectUuid: "1",
+                        subjectList: [{
+                            name: "栏目1-1",
+                            subjectUuid: "1-1",
+                        }, ],
+                    }, {
+                        name: "栏目2",
+                        subjectUuid: "2",
+                        subjectList: [],
+                    }, ]
+                }
+            },
+            methods: {}
+        })
+    </script>
+</body>
+
+</html>
+```
+
+#### 四、API
 
 ##### 1、Attributes属性
 
