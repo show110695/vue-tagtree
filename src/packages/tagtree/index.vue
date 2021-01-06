@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'tagtree',
+  name: "tagtree",
   data() {
     return {
       selectedNodes: [],
@@ -252,10 +252,10 @@ export default {
     width: 40%;
     margin: 0 20px 10px 0;
   }
-  .el-scrollbar__wrap {
+  /deep/ .el-scrollbar__wrap {
     overflow-x: hidden;
   }
-  .el-dialog__body {
+  /deep/ .el-dialog__body {
     padding-top: 0;
   }
 }
