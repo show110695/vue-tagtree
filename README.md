@@ -1,5 +1,7 @@
 ### vue-tagtree
 
+*vue*-*tagtree*是一个树形选择器，它基于 *vue*和 element-ui实现，支持多选和单选。
+
 #### 一、预览
 
 [https://lifuhai1106.github.io/vue-tagtree-site/tagtree/tagtree.html](https://lifuhai1106.github.io/vue-tagtree-site/tagtree/tagtree.html)
